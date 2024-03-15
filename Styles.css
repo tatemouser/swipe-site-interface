@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    background-color: white;
+    margin: 0; 
+    padding: 0;
+}
+
+.container {
+    /* HOLDS EVERYTHING */
+}
+
+/*------------
+    Header  
+-------------*/
+.header {
+    background-color: #333;
+    padding: 1vh;
+}
+
+.logo-container {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.SiteLogo {
+    padding-left: 2vh;
+    width: 5vh;
+    max-width: 200px; /* Example max width for the logo */
+}
+
+/* Main Content Styles */
+.main-container {
+    /* Add some space between header and main content */
+}
+
+.wrapper {
+    background-color: white;
+}
+
+.content {
+    background-color: red;
+}
+
+/*------------
+  Item Section  
+-------------*/
+
+.shop-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.shop-item {
+    position: relative;
+    margin: 10px; 
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+}
+
+.shop-item-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.shop-item-image img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.shop-item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.shop-item-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.shop-item-description {
+    margin-bottom: 20px;
+}
+
+.shop-item-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.shop-item-buttons button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.shop-item-buttons button:last-child {
+    margin-right: 0;
+}
+
+.shop-item-buttons button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------
+    Footer  
+-------------*/
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+}
+
+/* IOS */
+@media only screen and (max-width: 600px) {
+    .shop-item {
+    }
+}

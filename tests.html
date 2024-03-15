@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .shop-item {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 2vh;
+            width: 2vh;
+        }
+
+        .shop-item-image {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .shop-item-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .shop-item-content {
+            padding: 20px;
+        }
+
+        .shop-item-title {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .shop-item-description {
+            margin-bottom: 20px;
+        }
+
+        .shop-item-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .shop-item-buttons button {
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px; /* Adjust spacing between buttons */
+        }
+
+        .shop-item-buttons button:last-child {
+            margin-right: 0; /* Remove margin from last button */
+        }
+
+        .shop-item-buttons button:hover {
+            background-color: #555;
+        }
+
+        /* Media query for adapting layout */
+        @media screen and (min-width: 768px) {
+            .shop-item {
+                width: calc(50% - 20px); /* Two items per row */
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .shop-item:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .shop-item {
+                width: calc(33.33% - 20px); /* Three items per row */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="shop-item">
+    <div class="shop-item-image">
+        <img src="example.jpg" alt="Product Image">
+    </div>
+    <div class="shop-item-content">
+        <h2 class="shop-item-title">Product Title</h2>
+        <p class="shop-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida mauris sed nibh interdum, sed molestie eros ultricies.</p>
+        <div class="shop-item-buttons">
+            <button class="shop-item-button">Add to Cart</button>
+            <button class="shop-item-button">View Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="shop-item">
+    <div class="shop-item-image">
+        <img src="example.jpg" alt="Product Image">
+    </div>
+    <div class="shop-item-content">
+        <h2 class="shop-item-title">Product Title</h2>
+        <p class="shop-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida mauris sed nibh interdum, sed molestie eros ultricies.</p>
+        <div class="shop-item-buttons">
+            <button class="shop-item-button">Add to Cart</button>
+            <button class="shop-item-button">View Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="shop-item">
+    <div class="shop-item-image">
+        <img src="example.jpg" alt="Product Image">
+    </div>
+    <div class="shop-item-content">
+        <h2 class="shop-item-title">Product Title</h2>
+        <p class="shop-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida mauris sed nibh interdum, sed molestie eros ultricies.</p>
+        <div class="shop-item-buttons">
+            <button class="shop-item-button">Add to Cart</button>
+            <button class="shop-item-button">View Details</button>
+        </div>
+    </div>
+</div>
+
+<!-- Repeat the above shop item markup for each item -->
+<!-- You can simply copy and paste the above shop item block multiple times -->
+
+</body>
+</html>
